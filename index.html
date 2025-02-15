@@ -3,67 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AIMRINOVA - AI-Powered MRI Scan Detection</title>
+    <title>AIMRINOVA - AI-Powered MRI Analysis</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        .hero-section { background: #343a40; color: white; padding: 80px 0; }
+        .feature-icon { font-size: 3rem; color: #0d6efd; }
+    </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- Hero Section -->
+    <header class="hero-section text-center">
         <div class="container">
-            <a class="navbar-brand" href="#">AIMRINOVA</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#how-it-works">How It Works</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#technology">Technology</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#security">Security</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <header class="bg-primary text-white text-center py-5">
-        <div class="container">
-            <h1>AI-Powered MRI Scan Detection</h1>
-            <p>Revolutionizing medical imaging with on-premise AI solutions</p>
+            <h1 class="display-4">Revolutionizing MRI Scan Analysis with AI</h1>
+            <p class="lead">On-premises AI ensuring fast, secure, and accurate medical imaging.</p>
+            <a href="#features" class="btn btn-primary btn-lg">Learn More</a>
         </div>
     </header>
-
-    <section id="how-it-works" class="py-5">
+    
+    <!-- Features Section -->
+    <section id="features" class="py-5">
         <div class="container text-center">
-            <h2>How It Works</h2>
-            <p>AIMRINOVA utilizes deep learning and convolutional neural networks (CNNs) to analyze MRI scans efficiently and accurately.</p>
+            <h2 class="mb-4">Why Choose AIMRINOVA?</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <i class="bi bi-cpu feature-icon"></i>
+                    <h4>On-Prem AI Processing</h4>
+                    <p>Process MRI scans locally without cloud dependency, ensuring full data security.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="bi bi-bar-chart feature-icon"></i>
+                    <h4>Deep Learning for MRI</h4>
+                    <p>Advanced CNN models trained on medical imaging datasets for precise analysis.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="bi bi-shield-lock feature-icon"></i>
+                    <h4>GDPR/HIPAA Compliance</h4>
+                    <p>Data encryption & compliance with medical regulations for hospital-grade security.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- AI Model Visualization (Image) -->
+    <!-- AI in Action Section -->
+    <section class="bg-light py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">AI in Action</h2>
+            <div id="aiCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="path/to/ai_healthcare_icon.png" class="d-block mx-auto" alt="AI in Healthcare" style="width: 150px;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>AI Enhancing Healthcare Diagnostics</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="path/to/on_premises_server_icon.png" class="d-block mx-auto" alt="On-Premises Server" style="width: 150px;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>Secure On-Premises Data Processing</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#aiCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#aiCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
     </section>
 
-    <section id="technology" class="bg-light py-5">
-        <div class="container text-center">
-            <h2>Technology</h2>
-            <p>Our AI models run on high-performance Nvidia-powered hardware, ensuring fast and private medical imaging analysis.</p>
+    
+    <!-- Tech Stack -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">⚙️ Tech Stack</h2>
+            <ul class="list-group">
+                <li class="list-group-item">🔹 AI Frameworks: TensorFlow, PyTorch, MONAI</li>
+                <li class="list-group-item">🔹 Data Formats: DICOM (Digital Imaging and Communications in Medicine), NIfTI</li>
+                <li class="list-group-item">🔹 Processing Hardware: Nvidia Digits, Custom AI Servers</li>
+            </ul>
         </div>
     </section>
-
-    <section id="security" class="py-5">
-        <div class="container text-center">
-            <h2>Security & Compliance</h2>
-            <p>AIMRINOVA is fully compliant with GDPR and HIPAA standards, ensuring patient data remains secure and private.</p>
+    
+    <!-- Security & Compliance -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">🔐 Security & Compliance</h2>
+            <ul class="list-group">
+                <li class="list-group-item">✔ Patient Data Encryption – MRI scans processed without personal data exposure</li>
+                <li class="list-group-item">✔ GDPR & HIPAA Compliance – No cloud uploads, all AI processing is local</li>
+                <li class="list-group-item">✔ Secure Hospital Integration – Works with PACS and HL7 standards</li>
+            </ul>
         </div>
     </section>
-
-    <section id="contact" class="bg-light py-5">
+    
+    <!-- Contact Information -->
+    <section class="py-5">
         <div class="container text-center">
-            <h2>Contact Us</h2>
-            <p>Interested in integrating AIMRINOVA? Contact us below.</p>
-            <a href="mailto:daschub496@gmail.com" class="btn btn-primary">Email Us</a>
+            <h2 class="mb-4">📩 Contact</h2>
+            <p>💼 <strong>Project Lead:</strong> Daniel Schubert</p>
+            <p>📧 <strong>Email:</strong> daschub496@gmail.com</p>
+            <p>🌐 <strong>Website:</strong> www.aimrinova.com</p>
         </div>
     </section>
-
+    
+    <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2025 AIMRINOVA. All Rights Reserved.</p>
     </footer>
-
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
